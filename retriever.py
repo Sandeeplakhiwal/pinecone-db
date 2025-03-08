@@ -13,6 +13,7 @@ import json
 from md import get_texts
 import re
 from datetime import datetime
+import ollama
 
 
 load_dotenv()
@@ -41,8 +42,6 @@ def get_chunks_with_metadata():
     data = loader.load()
     full_text = "\n\n".join([doc.page_content for doc in data])
 
-    # Extract the date
-    reconciliation_date = FALLBACK_DATE
 
     # Markdown splitting
     header_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=[("#", "Heading1"), ("##", "Heading2"), ("###", "Heading3"), ("####", "Heading4")])
@@ -116,7 +115,7 @@ def upsert_to_db(chunks):
             "values": embedding,  # single embedding per chunk
             "metadata": {
                 "reconciliation_date": chunk["metadata"]["reconciliation_date"],
-                "text": chunk["text"][:1000]  # Optional: store first 1000 chars of text
+                "text": chunk["text"]  
             }
         })
 
@@ -158,9 +157,34 @@ def do_query(query, reconciliation_date=None):
 
 # upsert_to_db(get_chunks_with_metadata())
 
-response = do_query(
-    query="reconcilation date 6/30/2023",
-    reconciliation_date="6/30/2023"
-)
+# response = do_query(
+#     query="reconcilation date 6/30/2023",
+#     reconciliation_date="6/30/2023"
+# )
 
-print("Response", response)
+# print("Response", response)
+
+def generate_response(query, reconcilation_date):
+    results = do_query(query, reconcilation_date)
+    
+    print("Query Results:", results)  # Debugging line
+
+    if not results.get("matches"):  # Check if results exist
+        print("No matches found.")
+        return "No relevant data found."
+
+    context = "\n\n".join([r["metadata"]["text"] for r in results["matches"]])
+
+    print("Context is:", context)
+
+    prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
+    
+    response = ollama.chat(model="phi", messages=[{"role": "user", "content": prompt}])
+    
+    return response
+
+
+
+generated_response = generate_response("reconcilation date 6/30/2023", "6/30/2023")
+
+print("Generated response: ", generated_response)
