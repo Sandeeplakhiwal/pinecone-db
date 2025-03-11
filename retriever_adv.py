@@ -244,7 +244,7 @@ def generate_response(query, reconcilation_date):
     chuk = get_chunks_with_metadata()
 
     # print(len(chuk))
-    llm = Ollama(model="deepseek-r1:latest", temperature=0.0, context_window=4096)
+    llm = Ollama(model="llama2:latest", temperature=0.0, context_window=1000)
     Settings.llm = llm
 
     # vec_store = PineconeVectorStore(pinecone_index=dense_index)
@@ -252,7 +252,7 @@ def generate_response(query, reconcilation_date):
     filter = MetadataFilters(
         filters=[
             MetadataFilter(
-                key="reconciliation_date", value="6/30/2023"
+                key="reconciliation_date", value=reconcilation_date
             ), MetadataFilter(key="uncleared", value="checks/vouchers")
         ]
     )
@@ -261,43 +261,36 @@ def generate_response(query, reconcilation_date):
     # print(chuk[70].metadata['reconciliation_date'])
     # print
 
-    for ch in chuk:
-        if(ch.metadata['reconciliation_date'] == "6/30/2023"
-           ):
-            print(ch.text)
-            print(ch.metadata)
+    # for ch in chuk:
+    #     if(ch.metadata['reconciliation_date'] == reconcilation_date
+    #        ):
+    #         print(ch.text)
+    #         print(ch.metadata)
     retriever = VectorIndexRetriever(index=index, similarity_top_k=20, filters=filter)
     nodes = retriever.retrieve(query)
 
-    # for nd in nodes:
-    #      print(
-    #     "------------------------",
-    #     nd
-    #     ,
-    #     "-----------"
-    #     "-----------"
-    # )
+    
    
-    # qs_eng = RetrieverQueryEngine(retriever=retriever)
-    # _q = qs_eng.query(query)
+    qs_eng = RetrieverQueryEngine(retriever=retriever)
+    _q = qs_eng.query(query)
     # print(retriever.retrieve("outstanding checks/vouchers"), "nodes")
     # qs_eng = index.as_query_engine(similarity_top_k=5, filter=filter, llm=llm)
     # _query = qs_eng.query(query)
-    # print(_q)
+    print(_q)
     return "response"
 
 
 
-# generated_response = generate_response("extract all outstanding checks/vouchers in json format", "6/30/2023")
+generated_response = generate_response("extract all outstanding checks/vouchers in json format", "6/30/2023")
 
 # print("Generated response: ", generated_response)
-print(len(get_chunks_with_metadata()))
-for ch in get_chunks_with_metadata():
-    # print(ch.text)
-    # print(ch.metadata)
+# print(len(get_chunks_with_metadata()))
+# for ch in get_chunks_with_metadata():
+#     # print(ch.text)
+#     # print(ch.metadata)
         
-        if(ch.metadata['reconciliation_date'] == "6/30/2023"
-           and ch.metadata['uncleared'] == "checks/vouchers"
-           ):
-            print(ch.text)
-            print(ch.metadata)
+#         if(ch.metadata['reconciliation_date'] == "6/30/2023"
+#            and ch.metadata['uncleared'] == "checks/vouchers"
+#            ):
+#             print(ch.text)
+#             print(ch.metadata)
