@@ -14,6 +14,9 @@ from md import get_texts
 import re
 from datetime import datetime
 import ollama
+from llama_index.vector_stores.pinecone import PineconeVectorStore, Vector
+from llama_index.llms.ollama import Ollama
+
 
 
 load_dotenv()
@@ -42,13 +45,12 @@ def get_chunks_with_metadata():
     data = loader.load()
     full_text = "\n\n".join([doc.page_content for doc in data])
 
-
     # Markdown splitting
-    header_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=[("#", "Heading1"), ("##", "Heading2"), ("###", "Heading3"), ("####", "Heading4")])
+    header_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=[("#", "Heading1")])
     text_chunks = header_splitter.split_text(full_text)
 
     recursive_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=2000,  # Tune as needed
+        chunk_size=2000,  
         chunk_overlap=200
     )
 
@@ -65,7 +67,7 @@ def get_chunks_with_metadata():
     for chunk in small_chunks:
         current_date = extract_reconciliation_date(chunk)
         if current_date:
-            last_known_date = current_date  # Update with the latest found date
+            last_known_date = current_date  
             print("Current Date/Last known date", current_date)
         
         final_chunks.append({
@@ -115,7 +117,7 @@ def upsert_to_db(chunks):
             "values": embedding,  # single embedding per chunk
             "metadata": {
                 "reconciliation_date": chunk["metadata"]["reconciliation_date"],
-                "text": chunk["text"]  
+                "text": chunk["text"][:1000]  
             }
         })
 
@@ -167,24 +169,28 @@ def do_query(query, reconciliation_date=None):
 def generate_response(query, reconcilation_date):
     results = do_query(query, reconcilation_date)
     
-    print("Query Results:", results)  # Debugging line
+    print("Query Results:", len(results["matches"]), results)  # Debugging line
 
     if not results.get("matches"):  # Check if results exist
         print("No matches found.")
         return "No relevant data found."
 
-    context = "\n\n".join([r["metadata"]["text"] for r in results["matches"]])
+    # context = "\n\n".join([r["metadata"]["text"] for r in results["matches"]])
 
-    print("Context is:", context)
+    # print("Context is:", context)
 
-    prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
+    # prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
     
-    response = ollama.chat(model="phi", messages=[{"role": "user", "content": prompt}])
+    # response = ollama.chat(model="phi", messages=[{"role": "user", "content": prompt}])
     
-    return response
+    # return response
+
+    llm = Ollama(model="llama2", temperature=0.0)
 
 
 
-generated_response = generate_response("reconcilation date 6/30/2023", "6/30/2023")
+
+
+generated_response = generate_response("**Reconciliation Date:** 6/30/2023", "6/30/2023")
 
 print("Generated response: ", generated_response)

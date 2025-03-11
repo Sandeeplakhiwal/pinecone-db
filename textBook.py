@@ -94,13 +94,13 @@ def generate_response(query):
     
     context = "\n\n".join([r["metadata"]["text"] for r in results["matches"]])
 
-    print("Context done...", context)
+    # print("Context done...", context)
 
     prompt = f"Context:\n{context}\n\nQuestion: {query}\n\nAnswer:"
 
-    response = ollama.chat(model="phi", messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(model="llama2", messages=[{"role": "user", "content": prompt}])
 
     return response
 
 
-print("Generated response: ", generate_response("Please generate 10 mcqs with answers from this chapter."))
+print("Generated response: ", generate_response("What is the name of this chapter?"))

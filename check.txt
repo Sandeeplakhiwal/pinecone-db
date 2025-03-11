@@ -1,0 +1,189 @@
+769
+| JV-15-6443      | 5/31/2023     | TO RECORD CLEARINGS AT 5.31.2023 - ADJ TO DEF REV | 0.00            |
+| JV-15-6522      | 5/31/2023     | CASH ACTIVITY FOR MAY 2023 | (798.86) |
+| JV-15-6523      | 5/31/2023     | POST SWEEP FEES - SWEEP REBATES FOR MAY 2023 | (3,006.77) |
+| JV-15-6524      | 5/31/2023     | POST INTEREST/SWEEP PAYMENTS FOR MAY 2023 | 53,820.36 |
+
+Cleared Other Cash Items
+
+12,796.84
+# Sac and Fox Nation
+## Reconcile Cash Accounts
+
+### Summary
+
+**Cash Account:** 1060 U.S. Treasury Allocation  
+**Reconciliation ID:** US Treasury Allocation #1060 06/30/2023  
+**Reconciliation Date:** 6/30/2023  
+**Status:** Open
+
+| Description                                      | Amount     |
+|--------------------------------------------------|------------|
+| Bank Balance                                     | 13,816,757.02 |
+| Less Outstanding Checks/Vouchers                 | 114,792.47 |
+| Plus Deposits in Transit                         | 0.00       |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| Less Outstanding Checks/Vouchers                 | 114,792.47 |
+| Plus Deposits in Transit                         | 0.00       |
+| Plus or Minus Other Cash Items                   | 0.00       |
+| Plus or Minus Suspense Items                     | 300.00     |
+| **Reconciled Bank Balance**                      | 13,702,264.55 |
+| Balance Per Books                                | 13,702,264.55 |
+| Unreconciled Difference                          | 0.00       |
+
+**Click the Next Page toolbar button to view details.**
+# Sac and Fox Nation
+## Reconcile Cash Accounts
+
+### Cash Account: 1060 U.S. Treasury Allocation
+**Reconciliation ID:** US Treasury Allocation #1060 06/30/2023  
+**Reconciliation Date:** 6/30/2023  
+**Status:** Open
+
+### Outstanding Checks/Vouchers
+
+| Document Number | Document Date | Document Description           | Document Amount | Payee                           |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+**Status:** Open
+
+### Outstanding Checks/Vouchers
+
+| Document Number | Document Date | Document Description           | Document Amount | Payee                           |
+|-----------------|---------------|--------------------------------|----------------|---------------------------------|
+| 3255            | 7/8/2021      | System Generated Check/Voucher | 2,000.00       | JONES, BLAKE MATTHEW           |
+| 4127            | 10/7/2021     | System Generated Check/Voucher | 500.00         | TABER, MAYGAN RENAE           |
+| 5426            | 11/8/2021     | System Generated Check/Voucher | 500.00         | FORD, RACHEL LANE             |
+| 5506            | 11/17/2021    | System Generated Check/Voucher | 500.00         | GIBBS, DAMON ALEXANDER       |
+| 5772            | 12/22/2021    | System Generated Check/Voucher | 2,000.00       | MORRIS, KEITH DEAN          |
+| 5789            | 12/23/2021    | System Generated Check/Voucher | 500.00         | NULLAKE, WALTER ANDREW      |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 5789            | 12/23/2021    | System Generated Check/Voucher | 500.00         | NULLAKE, WALTER ANDREW      |
+| 5850            | 1/4/2022      | System Generated Check/Voucher | 500.00         | GIFFIN, JACOB ANTHONY      |
+| 6062            | 2/28/2022     | System Generated Check/Voucher | 500.00         | GROVES, LAURA               |
+| 7456            | 4/18/2023     | System Generated Check/Voucher | 500.00         | MCALLISTER, DONNA K        |
+| 6628            | 4/21/2023     | System Generated Check/Voucher | 350.00         | GEORGE, KENNETH LYNN        |
+| 6656            | 4/21/2023     | System Generated Check/Voucher | 350.00         | NORMAN, GARY DON            |
+| 7059            | 4/21/2023     | System Generated Check/Voucher | 300.00         | ASHLEY, ENRIQUE R.         |
+| 7082            | 4/21/2023     | System Generated Check/Voucher | 350.00         | COBB, ROY DEAN              |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 7082            | 4/21/2023     | System Generated Check/Voucher | 350.00         | COBB, ROY DEAN              |
+| 7129            | 4/21/2023     | System Generated Check/Voucher | 300.00         | HEILWEIL, VALERIE LOVELL SNOW|
+| 7207            | 4/21/2023     | System Generated Check/Voucher | 300.00         | ARELLANO, MAGDALENA L       |
+| 7338            | 4/21/2023     | System Generated Check/Voucher | 300.00         | GARCIA, ALEXANDER LUIS      |
+| 7344            | 4/21/2023     | System Generated Check/Voucher | 300.00         | GIBSON, CHEVAUN             |
+| 7347            | 4/21/2023     | System Generated Check/Voucher | 300.00         | GILLUM, SAMANTHA           |
+| 7592            | 4/21/2023     | System Generated Check/Voucher | 300.00         | WEST, AMBER NICOLE         |
+| 7812            | 4/21/2023     | System Generated Check/Voucher | 350.00         | NORDYKE, DAVID K           |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 7812            | 4/21/2023     | System Generated Check/Voucher | 350.00         | NORDYKE, DAVID K           |
+| 7885            | 4/21/2023     | System Generated Check/Voucher | 350.00         | EVERSOLE, ANNA MARIE        |
+| 7903            | 4/21/2023     | System Generated Check/Voucher | 300.00         | KASECA, TRISTEN BRYCE       |
+| 7914            | 4/21/2023     | System Generated Check/Voucher | 350.00         | MCALLISTER, DONNA K        |
+| 7960            | 4/21/2023     | System Generated Check/Voucher | 300.00         | ANDERSEN, STEVEN KEEGAN    |
+| 7993            | 4/21/2023     | System Generated Check/Voucher | 300.00         | TABER, JOHN GLENN          |
+| 8065            | 4/21/2023     | System Generated Check/Voucher | 300.00         | MCKOSATO, EMMALEE MARIE    |
+# Reconcile Cash Accounts
+
+**Sac and Fox Nation Details**
+
+**Cash Account:** 1060 U.S. Treasury Allocation  
+**Reconciliation ID:** US Treasury Allocation #1060 06/30/2023
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+# Reconcile Cash Accounts
+
+**Sac and Fox Nation Details**
+
+**Cash Account:** 1060 U.S. Treasury Allocation  
+**Reconciliation ID:** US Treasury Allocation #1060 06/30/2023  
+**Reconciliation Date:** 6/30/2023  
+**Status:** Open
+
+## Outstanding Checks/Vouchers
+
+| Document Number | Document Date | Document Description | Document Amount | Payee                        |
+|-----------------|---------------|----------------------|-----------------|-----------------------------|
+| 8068            | 4/21/2023     | System Generated Check/Voucher | 300.00          | OTT, JORDAN LEON            |
+| 8256            | 4/21/2023     | System Generated Check/Voucher | 300.00          | GRASS, FLOYD KEITH          |
+| 8299            | 4/24/2023     | System Generated Check/Voucher | 300.00          | GUERRERO, ANNA              |
+| 8303            | 4/24/2023     | System Generated Check/Voucher | 300.00          | GUERRERO, MERCEDES ANN      |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 8303            | 4/24/2023     | System Generated Check/Voucher | 300.00          | GUERRERO, MERCEDES ANN      |
+| 8331            | 4/24/2023     | System Generated Check/Voucher | 350.00          | MURDOCK, CHERYL             |
+| 8341            | 4/24/2023     | System Generated Check/Voucher | 300.00          | VILLARREAL, FERMIN, JR.     |
+| 8342            | 4/24/2023     | System Generated Check/Voucher | 350.00          | VILLARREAL, HELEN M         |
+| 8371            | 4/25/2023     | System Generated Check/Voucher | 300.00          | WALKER, JAI ALLEN           |
+| 8446            | 4/26/2023     | System Generated Check/Voucher | 300.00          | WELLBROCK, HEATHER          |
+| 8449            | 4/26/2023     | System Generated Check/Voucher | 300.00          | WELLBROCK, SPENCER DAVID    |
+| 8474            | 4/26/2023     | SystemGenerated Check/Voucher  | 300.00          | GARCIA, JAMIE BRICE         |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 8474            | 4/26/2023     | SystemGenerated Check/Voucher  | 300.00          | GARCIA, JAMIE BRICE         |
+| 8501            | 5/3/2023      | System Generated Check/Voucher | 300.00          | SAUNDERS, DARRUS ELRAY      |
+| 8579            | 5/4/2023      | System Generated Check/Voucher | 300.00          | HOWELL, WAYLON EDWARD       |
+| 8593            | 5/4/2023      | System Generated Check/Voucher | 300.00          | RICH, JERRICA               |
+| 8610            | 5/5/2023      | System Generated Check/Voucher | 350.00          | BRICE, RICKY DEAN           |
+| 8629            | 5/5/2023      | System Generated Check/Voucher | 300.00          | ELLIS, ALBERTO ISMAEL       |
+| 8690            | 5/5/2023      | System Generated Check/Voucher | 300.00          | ROUGHFACE, KAYLEIGH         |
+| 8733            | 5/5/2023      | System Generated Check/Voucher | 300.00          | HITCHCOCK, BLAKE ALAN       |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 8733            | 5/5/2023      | System Generated Check/Voucher | 300.00          | HITCHCOCK, BLAKE ALAN       |
+| 8746            | 5/9/2023      | System Generated Check/Voucher | 0.00            | MARQUEZ, ANTONIO MIGUEL     |
+| 8765            | 5/11/2023     | System Generated Check/Voucher | 350.00          | BISWELL, TWANNA CHARLENE    |
+| 8768            | 5/11/2023     | System Generated Check/Voucher | 300.00          | BUTLER, ASHLEY              |
+| 8772            | 5/11/2023     | System Generated Check/Voucher | 300.00          | CALLAN, ASHLEY ELIZABETH    |
+| 8781            | 5/11/2023     | System Generated Check/Voucher | 300.00          | ENIS, AMY BECKMAN           |
+| 8879            | 5/18/2023     | System Generated Check/Voucher | 300.00          | GRANT, DAVID                |
+| 8888            | 5/18/2023     | System Generated Check/Voucher | 350.00          | JOHNSON, RAMONA M           |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 8888            | 5/18/2023     | System Generated Check/Voucher | 350.00          | JOHNSON, RAMONA M           |
+| 8960            | 5/19/2023     | System Generated Check/Voucher | 350.00          | ROWE, SHERYL JANE           |
+## Outstanding Checks/Vouchers
+
+| Document Number | Document Date | Document Description       | Document Amount | Payee                          |
+|-----------------|---------------|----------------------------|-----------------|--------------------------------|
+| 8977            | 5/25/2023     | System Generated Check/Voucher | 350.00          | ABLIN, BILLY D                 |
+| 8982            | 5/25/2023     | System Generated Check/Voucher | 300.00          | KOHLER, ELLA IRENE             |
+| 8985            | 5/25/2023     | System Generated Check/Voucher | 300.00          | LITTLEHEAD, COURTNEY           |
+| 9004            | 5/25/2023     | System Generated Check/Voucher | 300.00          | HERNANDEZ, ROBERT SAMUEL       |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 9004            | 5/25/2023     | System Generated Check/Voucher | 300.00          | HERNANDEZ, ROBERT SAMUEL       |
+| 9011            | 5/25/2023     | System Generated Check/Voucher | 300.00          | KING, TINA MARIE               |
+| 9014            | 5/25/2023     | System Generated Check/Voucher | 300.00          | MARTINSON, MADISON GRACE       |
+| 9026            | 5/25/2023     | System Generated Check/Voucher | 300.00          | RODRIGUE, TAWNY                |
+| 9075            | 6/2/2023      | System Generated Check/Voucher | 300.00          | ALLEN, APRIL WYMAN             |
+| 9080            | 6/2/2023      | System Generated Check/Voucher | 350.00          | BROWN, LA DONNA RENEE          |
+| 9083            | 6/2/2023      | System Generated Check/Voucher | 300.00          | DELIRA, R J NATHANIEL          |
+| 9084            | 6/2/2023      | System Generated Check/Voucher | 350.00          | EASLEY, CHARLOTTE KAY          |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 9084            | 6/2/2023      | System Generated Check/Voucher | 350.00          | EASLEY, CHARLOTTE KAY          |
+| 9091            | 6/2/2023      | System Generated Check/Voucher | 350.00          | GIFFIN, KAI JOSEPH             |
+| 9092            | 6/2/2023      | System Generated Check/Voucher | 300.00          | GONZALES, ASHLEY MARIE         |
+| 9107            | 6/2/2023      | System Generated Check/Voucher | 300.00          | O'BAR, JOSHUA ADRIAN           |
+| 9111            | 6/2/2023      | System Generated Check/Voucher | 300.00          | PAWPA, TIMOTHY JAMES, JR.      |
+| 9112            | 6/2/2023      | System Generated Check/Voucher | 300.00          | PEACOCK, JESSICA               |
+| 9121            | 6/2/2023      | System Generated Check/Voucher | 300.00          | ROGERS, TIMOTHY COOPER          |
+| 9124            | 6/2/2023      | System Generated Check/Voucher | 350.00          | SIMMONS, JUDY F                |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 9124            | 6/2/2023      | System Generated Check/Voucher | 350.00          | SIMMONS, JUDY F                |
+| 9131            | 6/2/2023      | System Generated Check/Voucher | 300.00          | WARRIOR, PHILEMON              |
+| 9155            | 6/21/2023     | System Generated Check/Voucher | 54,195.97       | VERIZON                        |
+| 9161            | 6/26/2023     | System Generated Check/Voucher | 300.00          | GIFFIN, JULIA                  |
+| 9162            | 6/28/2023     | System Generated Check/Voucher | 2,500.00        | C & S PLUMBING LLC             |
+| 9163            | 6/28/2023     | System Generated Check/Voucher | 1,555.80        | CDW GOVERNMENT INC             |
+| 9164            | 6/28/2023     | System Generated Check/Voucher | 4,575.29        | CDW GOVERNMENT INC             |
+| 9165            | 6/28/2023     | System Generated Check/Voucher | 5,782.59        | CDW GOVERNMENT INC             |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
+| 9165            | 6/28/2023     | System Generated Check/Voucher | 5,782.59        | CDW GOVERNMENT INC             |
+| 9166            | 6/28/2023     | System Generated Check/Voucher | 16,907.82       | CDW GOVERNMENT INC             |
+### Outstanding Checks/Vouchers
+
+| Document Number | Document Date | Document Description                  | Document Amount | Payee                |
+|-----------------|---------------|---------------------------------------|-----------------|---------------------|
+| 9167            | 6/28/2023     | System Generated Check/Voucher        | 1,250.00        | GRASS CONSTRUCTION  |
+| 9168            | 6/28/2023     | System Generated Check/Voucher        | 75.00           | ROBINSON, LAWRENCE  |
+| 9169            | 6/29/2023     | System Generated Check/Voucher        | 1,000.00        | BLANCHARD, NICHOLAS ADAM |
+
+Outstanding Checks/Vouchers: 114,792.47
+### Outustanding Suspense Items
+
+| Item Number | Date     | Description                  | Amount |
+{'reconciliation_date': '6/30/2023', 'uncleared': 'checks/vouchers'}
