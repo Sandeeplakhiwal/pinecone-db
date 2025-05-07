@@ -16,6 +16,9 @@ from llama_index.llms.ollama import Ollama
 from llama_index.core import Settings,VectorStoreIndex, Document
 from llama_index.vector_stores.pinecone import PineconeVectorStore
 from uuid import uuid4
+
+
+
 load_dotenv()
 
 
